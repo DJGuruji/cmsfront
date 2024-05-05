@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import musk from "/musk.jpg";
-import DeleteButton from "./DeleteProfileButton";
+import DeleteButton from "../components/DeleteProfileButton";
 import EditProfileForm from "./EditProfileForm";
 
 const Profile = () => {

@@ -1,13 +1,13 @@
 
 import './App.css'
-import AdminRouter from './components/routers/AdminRouter';
-import AuthRouter from './components/routers/AuthRouter'
-import HomeRouter from './components/routers/HomeRouter'
+import AdminRouter from './routers/AdminRouter';
+import AuthRouter from './routers/AuthRouter'
+import HomeRouter from './routers/HomeRouter'
 
 
 function App() {
-  const isLogged = false;
-  const isAdmin = false;
+  const isLogged = true;
+  const isAdmin = true;
 
   return (
     <>

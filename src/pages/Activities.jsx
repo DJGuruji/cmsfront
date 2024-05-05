@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import AccordionComponent from "./Accordion";
-import Pagination from "./Pagination";
-
-const Logs = () => {
+import AccordionComponent from "../components/Accordian";
+import Pagination from "../components/Pagination";
+const Activities = () => {
   return (
     <div className="search ml-20 lg:ml-52 xl:ml-52 lg:w-3/4 xl:w-3/4 h-full mt-20  ">
       <div className="mt-3">
@@ -15,9 +14,12 @@ const Logs = () => {
           <AccordionComponent></AccordionComponent>
         </div>
       </div>
-    <div className="flex justify-center mt-3"> <Pagination></Pagination></div>
+      <div className="flex justify-center mt-3">
+        {" "}
+        <Pagination></Pagination>
+      </div>
     </div>
   );
-}
+};
 
-export default Logs
+export default Activities;
