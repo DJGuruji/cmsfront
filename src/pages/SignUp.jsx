@@ -1,14 +1,20 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Select from 'react-select'
+import Input from '../components/Input';
 
 const SignupForm = () => {
   const navigate = useNavigate()
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [email, setEmail] = useState('');
-  const [department, setDepartment] = useState('');
+  // const [username, setUsername] = useState('');
+  // const [password, setPassword] = useState('');
+  // const [email, setEmail] = useState('');
+  // const [department, setDepartment] = useState('');
 
+  const [user, setUser] = useState({
+    username: "",
+    email: "",
+    password: "",
+  });
 
   const options = [
     { value: 'Cse', label: 'Computer Science And Engineering' },
@@ -17,10 +23,13 @@ const SignupForm = () => {
     { value: 'eee', label: 'Electrical And Electronics Engineering' },
   ]
 
+  const handleInputChange = (e) => {
+    setUser({ ...user, [e.target.name]: e.target.value });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here
+ 
   };
 
   return (
@@ -28,59 +37,46 @@ const SignupForm = () => {
       <form className="w-3/4 max-w-md p-6 bg-white shadow-md rounded-lg" onSubmit={handleSubmit}>
         <div className="mb-4">
         <h1 className="text-2xl font-bold text-center mb-3 text-slate-700 lg:mt-2 lg:mb-2 lg:text-2xl xl:mt-2 xl:mb-2 xl:text-2xl ">   <i className="fas fa-user text-3xl text-gray-700 mr-2"></i>SIGNUP</h1>
-          <label className="block text-gray-700 font-bold mb-2" htmlFor="username">
-            Username
-          </label>
-          <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="username"
-            type="text"
-            placeholder="Username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-          />
+        <label htmlFor="inputPassword" className="">
+              Username:
+            </label>
+            <Input
+              id="username"
+              type="text"
+              name="username"
+              onChange={handleInputChange}
+              placeholder="User Name"
+            />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700 font-bold mb-2" htmlFor="password">
-            Password
-          </label>
-          <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="password"
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
+        <label htmlFor="inputPassword" className="">
+              Password:
+            </label>
+            <Input
+              id="inputPassword"
+              type="password"
+              name="password"
+              onChange={handleInputChange}
+              placeholder="Password"
+            />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700 font-bold mb-2" htmlFor="email">
-            Email
-          </label>
-          <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="email"
-            type="email"
-            placeholder="Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
+        <label htmlFor="inputEmail" className="">
+              User Email:
+            </label>
+            <Input
+              id="inputEmail"
+              type="email"
+              name="email"
+              onChange={handleInputChange}
+              placeholder="User Email"
+            />
         </div>
         <div className="mb-4">
           <label className="block text-gray-700 font-bold mb-2" htmlFor="department">
             Department
           </label>
-          {/* <select
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="department"
-            value={department}
-            onChange={(e) => setDepartment(e.target.value)}
-          >
-            <option value="">Select department</option>
-            <option value="sales">Sales</option>
-            <option value="marketing">Marketing</option>
-            <option value="engineering">Engineering</option>
-          </select> */}
+        
             <Select options={options} />
         </div>
         <div className="flex items-center justify-center">

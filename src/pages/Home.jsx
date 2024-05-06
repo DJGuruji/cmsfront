@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Line } from "react-chartjs-2";
 import Complaints from "./Complaints";
-import LineChart from "./Chart";
+import LineChart from "../components/Chart";
 
 const Home = () => {
   const data = {
