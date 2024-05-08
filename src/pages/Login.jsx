@@ -62,7 +62,7 @@ const Login = () => {
         <p className="ml-7 lg:ml-9 xl:ml-9 mt-5 ">
           Not registered yet?{" "}
           <a
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/signup")}
             className="text-blue-700 hover:underline hover:text-green-700 "
           >
             signup{" "}
