@@ -11,10 +11,12 @@ import Users from "../pages/Users";
 import Activities from "../pages/Activities";
 import UserDetails from "../pages/UserDetails";
 import {ComplaintForm} from "../pages/ComplaintForm";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link ,useNavigate} from "react-router-dom";
 import musk from "/musk.jpg";
 
 const AdminRouter = () => {
+
+  const navigate = useNavigate();
   const [dropdown, setDropdown] = useState(false);
 
   const handleDropdown = () => {
