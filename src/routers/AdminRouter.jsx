@@ -10,7 +10,7 @@ import Trash from "../pages/Trash";
 import Users from "../pages/Users";
 import Activities from "../pages/Activities";
 import UserDetails from "../pages/UserDetails";
-import ComplaintForm from "../pages/ComplaintForm";
+import {ComplaintForm} from "../pages/ComplaintForm";
 import { Routes, Route, Link } from "react-router-dom";
 import musk from "/musk.jpg";
 

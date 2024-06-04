@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Complaints from "../pages/Complaints";
 import Home from "../pages/Home";
 import Profile from "../pages/Profile";
-import ComplaintForm from "../pages/ComplaintForm";
+import {ComplaintForm} from "../pages/ComplaintForm";
 import Notification from "../pages/Notification";
 import { Routes, Route, Link } from "react-router-dom";
 import musk from "/musk.jpg";
