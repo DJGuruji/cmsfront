@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Complaints from "../pages/Complaints";
 import Home from "../pages/Home";
 import Profile from "../pages/Profile";
@@ -20,6 +20,14 @@ const AdminRouter = () => {
   const handleDropdown = () => {
     setDropdown(!dropdown);
   };
+
+  useEffect(() => {
+    
+    if (window.location.pathname !== '/') {
+     
+      navigate('/');
+    }
+  }, []);
 
   return (
     <>
