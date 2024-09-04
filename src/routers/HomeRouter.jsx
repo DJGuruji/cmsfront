@@ -9,12 +9,14 @@ import musk from "/musk.jpg";
 
 
 const HomeRouter = () => {
-  const navigate = useNavigate();
+
   const [dropdown, setDropdown] = useState(false);
 
   const handleDropdown = () => {
     setDropdown(!dropdown);
   };
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     

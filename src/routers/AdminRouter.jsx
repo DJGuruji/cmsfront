@@ -16,12 +16,13 @@ import musk from "/musk.jpg";
 
 const AdminRouter = () => {
 
-  const navigate = useNavigate();
   const [dropdown, setDropdown] = useState(false);
 
   const handleDropdown = () => {
     setDropdown(!dropdown);
   };
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     
