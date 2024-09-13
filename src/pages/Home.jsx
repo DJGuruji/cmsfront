@@ -36,12 +36,12 @@ const Home = () => {
   };
   return (
     <>
-      <div className="search ml-20 lg:ml-52 xl:ml-52 lg:w-3/4 xl:w-3/4 h-full mt-20">
+      <div className="search lg:ml-28 xl:ml-28 lg:w-3/4 xl:w-3/4  mt-20">
    
       <h1 className="pt-9 pb-5 text-xl">Welcome User</h1>
 
-        <div className="flex justify-around ">
-          <div className="p-5 border-2 rounded-md">
+        <div className="flex justify-around overflow-scroll">
+          <div className="p-5 border-2 rounded-md ml-44 lg:ml-1 xl:ml-1">
             <h2>totalcomplaints</h2>
             <h1>100</h1>
           </div>
@@ -62,8 +62,9 @@ const Home = () => {
         <div className="mt-3">
           <LineChart />
         </div>
+        <Complaints />
       </div>
-      <Complaints />
+      
     </>
   );
 };

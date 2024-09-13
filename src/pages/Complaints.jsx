@@ -13,7 +13,7 @@ const Complaints = () => {
   ];
 
   return (
-    <div className="search ml-20 lg:ml-52 xl:ml-52 lg:w-3/4 xl:w-3/4 h-full mt-20">
+    <div className="search lg:w-3/4 xl:w-full h-full mt-20">
       <div className="flex justify-end">
       <Link to="/complaintform"className="text-white bg-blue-500 hover:bg-blue-600 p-2 rounded-md m-2">Add Complaints +</Link>
       </div>
@@ -57,7 +57,7 @@ const Complaints = () => {
           </span>
         </div>
       </form>
-      <div className="flex border-2">
+      <div className="flex border-2 overflow-scroll">
         <h1 className="p-2 m-2">Status:</h1>
         <span className="p-2 border-2 rounded-lg m-2">Active</span>
         <span className="p-2 border-2 rounded-lg m-2">Pending</span>
@@ -68,36 +68,60 @@ const Complaints = () => {
         <h1>Date:</h1>
         <span>19/09/2024</span>
       </div>
+      <div className="overflow-x-auto mt-5">
+  <table
+    className="min-w-full p-5 border-2 border-collapse"
+    style={{ borderCollapse: "collapse" }}
+  >
+    <thead>
+      <tr>
+        <th className="px-4 py-2 border">Complaint no</th>
+        <th className="px-4 py-2 border">Subject</th>
+        <th className="px-4 py-2 border">Status</th>
+        <th className="px-4 py-2 border">Complaint date</th>
+        <th className="px-4 py-2 border">Deadline</th>
+      </tr>
+    </thead>
+    <tbody className="text-center">
+      <tr>
+        <td className="px-4 py-2 border">1</td>
+        <td className="px-4 py-2 border">hello</td>
+        <td className="px-4 py-2 border">pending</td>
+        <td className="px-4 py-2 border">12/2/2024</td>
+        <td className="px-4 py-2 border">12/3/2024</td>
+      </tr>
+      <tr>
+        <td className="px-4 py-2 border">2</td>
+        <td className="px-4 py-2 border">hello</td>
+        <td className="px-4 py-2 border">pending</td>
+        <td className="px-4 py-2 border">12/2/2024</td>
+        <td className="px-4 py-2 border">12/3/2024</td>
+      </tr>
+      <tr>
+        <td className="px-4 py-2 border">3</td>
+        <td className="px-4 py-2 border">hello</td>
+        <td className="px-4 py-2 border">pending</td>
+        <td className="px-4 py-2 border">12/2/2024</td>
+        <td className="px-4 py-2 border">12/3/2024</td>
+      </tr>
+      <tr>
+        <td className="px-4 py-2 border">4</td>
+        <td className="px-4 py-2 border">hello</td>
+        <td className="px-4 py-2 border">pending</td>
+        <td className="px-4 py-2 border">12/2/2024</td>
+        <td className="px-4 py-2 border">12/3/2024</td>
+      </tr>
+      <tr>
+        <td className="px-4 py-2 border">5</td>
+        <td className="px-4 py-2 border">hello</td>
+        <td className="px-4 py-2 border">pending</td>
+        <td className="px-4 py-2 border">12/2/2024</td>
+        <td className="px-4 py-2 border">12/3/2024</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-      <table
-        className="mt-5 p-5 table border-2"
-        style={{ width: "100%", borderCollapse: "collapse" }}
-      >
-        <thead>
-          <tr className="">
-            <th>Complaint no</th>
-
-            <th>Subject</th>
-
-            <th>Status</th>
-            <th>Complaint date</th>
-            <th>Deadline</th>
-          </tr>
-        </thead>
-        <tbody className="text-center">
-          <tr>
-            <td>1</td>
-
-            <td>hello</td>
-
-            <td>pending</td>
-
-            <td>12/2/2024</td>
-
-            <td>12/3/2024</td>
-          </tr>
-        </tbody>
-      </table>
     </div>
   );
 };

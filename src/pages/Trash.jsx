@@ -3,7 +3,7 @@ import Pagination from "../components/Pagination";
 
 const Trash = () => {
   return (
-    <div className="search ml-20 lg:ml-52 xl:ml-52 lg:w-3/4 xl:w-3/4 h-full mt-20  ">
+    <div className="search  lg:w-3/4 xl:w-3/4 h-full mt-20  ">
       <div className="mt-3">
         <div className="p-2 border-b-2">12/10/2024</div>
         <div className="border-2">
