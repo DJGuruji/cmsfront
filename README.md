@@ -1,15 +1,20 @@
-# React + Vite
+# Complaint Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img src="https://github.com/DJGuruji/Bookmark/blob/main/src/assets/imj1.jpeg?raw=true" alt="Bookmark" width="800" height="500">
+<img src="https://github.com/DJGuruji/Bookmark/blob/main/src/assets/imj2.jpeg?raw=true" alt="Bookmark" width="800" height="500">
+<img src="https://github.com/DJGuruji/Bookmark/blob/main/src/assets/imj3.jpeg?raw=true" alt="Bookmark" width="800" height="500">
 
-Currently, two official plugins are available:
+## Project setup
+```bash
+https://github.com/DJGuruji/cmsfront.git
+cd cmsfront
+npm install
+npm run dev
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```
 
+# production link
+```bash
 
-{isLogged ? (
-        adminData.isAdmin ? <AdminRouter /> : <HomeRouter />
-      ) : (
-        <AuthRouter />
-      )}
+https://cmsreact.deno.dev
+```

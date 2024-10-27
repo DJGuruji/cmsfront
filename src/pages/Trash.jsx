@@ -4,6 +4,7 @@ import Pagination from "../components/Pagination";
 const Trash = () => {
   return (
     <div className="search  lg:w-3/4 xl:w-3/4 h-full mt-20  ">
+      <h1 className="text-red-600">Your Deleted Items Will Appear Here </h1>
       <div className="mt-3">
         <div className="p-2 border-b-2">12/10/2024</div>
         <div className="border-2">
